@@ -38,43 +38,63 @@ class _HomeScreenState extends State<HomeScreen> {
                 FittedBox(
                   fit: BoxFit.cover,
                   child: SizedBox(
-                    width: _controller.value.size?.width ?? 0,
-                    height: _controller.value.size?.height ?? 0,
+                    width: _controller.value.size?.width ??
+                        MediaQuery.of(context).size.width,
+                    height: _controller.value.size?.height ??
+                        MediaQuery.of(context).size.width,
                     child: VideoPlayer(_controller),
                   ),
                 ),
-                const Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        "RE-IMAGINE",
-                        style: TextStyle(
+                Stack(
+                  fit: StackFit.expand,
+                  alignment: Alignment.center,
+                  children: [
+                    const Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          "RE-IMAGINE",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 35,
+                              fontWeight: FontWeight.bold),
+                          textAlign: TextAlign.center,
+                        ),
+                        Text(
+                          "TOMORROW",
+                          style: TextStyle(
+                              color: Color.fromARGB(255, 0, 250, 133),
+                              fontSize: 35,
+                              fontWeight: FontWeight.bold),
+                          textAlign: TextAlign.center,
+                        ),
+                        SizedBox(
+                          height: 12,
+                        ),
+                        Text(
+                          "Spearhead the Future of Digital Transformation Through",
+                          style: TextStyle(
                             color: Colors.white,
-                            fontSize: 35,
-                            fontWeight: FontWeight.bold),
-                        textAlign: TextAlign.center,
-                      ),
-                      Text(
-                        "TOMORROW",
-                        style: TextStyle(
-                            color: Color.fromARGB(255, 0, 250, 133),
-                            fontSize: 35,
-                            fontWeight: FontWeight.bold),
-                        textAlign: TextAlign.center,
-                      ),
-                      Text(
-                        "Spearhead the Future of Digital Transformation Through",
+                            fontSize: 14,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ],
+                    ),
+                    const RollingText(),
+                    Positioned.fill(
+                      top: MediaQuery.of(context).size.height * 0.62,
+                      child: const Text(
+                        "IT Solutions",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 14,
                         ),
                         textAlign: TextAlign.center,
                       ),
-                      RollingText()
-                    ],
-                  ),
-                ),
+                    ),
+                  ],
+                )
               ],
             ),
           ),
