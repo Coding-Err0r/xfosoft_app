@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'screens/liquidswipe/liquid_swipe_animation.dart';
 import 'screens/screens.dart';
 
 void main() {
@@ -18,7 +17,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const LiquidSwipeAnimation(),
+      home: const MainScreen(),
+      
     );
   }
 }
