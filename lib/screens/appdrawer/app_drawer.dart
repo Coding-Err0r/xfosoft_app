@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:rive_animation/screens/appdrawer/drawerbtn/drawer_btn.dart';
+import 'package:rive_animation/utils/utils.dart';
 
 class AppDrawer extends StatefulWidget {
   const AppDrawer({super.key});
@@ -15,7 +17,6 @@ class _AppDrawerState extends State<AppDrawer> {
         borderRadius: BorderRadius.zero,
       ),
       backgroundColor: Colors.white,
-      
       child: ListView(
         children: [
           Padding(
@@ -28,34 +29,11 @@ class _AppDrawerState extends State<AppDrawer> {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(vertical: 12),
-            child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                    shadowColor: Colors.cyan,
-                    foregroundColor: Colors.cyan,
-                    padding: const EdgeInsets.all(24),
-                    backgroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(0),
-                    )),
-                onPressed: () {},
-                child: Row(
-                  children: [
-                    const Icon(
-                      Icons.home,
-                      color: Colors.black,
-                      size: 24,
-                    ),
-                    const SizedBox(width: 8),
-                    Text("Home".toUpperCase(),
-                        style: const TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 16))
-                  ],
-                )),
-          ),
+          for (var data in DrawerButtonData)
+            DrawerBtn(
+              title: data.title,
+              icon: data.icon,
+            )
         ],
       ),
     );
