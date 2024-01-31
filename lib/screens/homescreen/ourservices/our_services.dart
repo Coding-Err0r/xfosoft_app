@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rive_animation/screens/homescreen/ourservices/servicecard/service_card.dart';
+import 'package:rive_animation/utils/utils.dart';
 
 class OurServices extends StatefulWidget {
   const OurServices({super.key});
@@ -13,14 +14,13 @@ class _OurServicesState extends State<OurServices> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
-      child: const Padding(
-        padding: EdgeInsets.all(8.0),
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(
@@ -45,7 +45,7 @@ class _OurServicesState extends State<OurServices> {
                 ),
               ],
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.symmetric(horizontal: 12),
               child: Text(
                 "End-to-End strategic partner with efficient and on-demand design, engineering, and development services",
@@ -57,7 +57,13 @@ class _OurServicesState extends State<OurServices> {
                 textAlign: TextAlign.center,
               ),
             ),
-            ServiceCard(),
+            for (var data in ourServiceData)
+              ServiceCard(
+                gif: data.gif,
+                icon: data.icon,
+                title: data.title,
+                description: data.description,
+              ),
           ],
         ),
       ),
