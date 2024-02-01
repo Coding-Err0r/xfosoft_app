@@ -79,3 +79,94 @@ List<DrawerButtonProps> DrawerButtonData = [
   DrawerButtonProps("Services", Icons.miscellaneous_services_rounded),
   DrawerButtonProps("Career", Icons.join_full),
 ];
+
+List<Map<String, dynamic>> IndustriesData = [
+  {
+    "title": "E-Commerce",
+    "icon": "assets/industry/shopping.png",
+  },
+  {
+    "title": "Education",
+    "icon": "assets/industry/education.png",
+  },
+  {
+    "title": "Retail",
+    "icon": "assets/industry/storefront.png",
+  },
+  {
+    "title": "Real Estate",
+    "icon": "assets/industry/deal.png",
+  },
+  {
+    "title": "Telecom",
+    "icon": "assets/industry/communication.png",
+  },
+  {
+    "title": "Fintech",
+    "icon": "assets/industry/payment.png",
+  },
+  {
+    "title": "Food",
+    "icon": "assets/industry/diet.png",
+  },
+  {
+    "title": "Banking",
+    "icon": "assets/industry/bank.png",
+  },
+  {
+    "title": "Health",
+    "icon": "assets/industry/medical.png",
+  },
+  {
+    "title": "Travel",
+    "icon": "assets/industry/airplane.png",
+  },
+  {
+    "title": "Entertainment",
+    "icon": "assets/industry/cinema.png",
+  },
+  {
+    "title": "Startup",
+    "icon": "assets/industry/rocket.png",
+  },
+  {
+    "title": "Non-Profit",
+    "icon": "assets/industry/helping-hand.png",
+  },
+  {
+    "title": "Hospitality",
+    "icon": "assets/industry/pin.png",
+  },
+  {
+    "title": "Public Sector",
+    "icon": "assets/industry/feedback.png",
+  },
+  {
+    "title": "Automotive",
+    "icon": "assets/industry/automotive.png",
+  },
+  {
+    "title": "Software",
+    "icon": "assets/industry/software.png",
+  },
+  {
+    "title": "Miscellaneous",
+    "icon": "assets/industry/box.png",
+  },
+];
+
+class SummaryProps {
+  late String title;
+  late String icon;
+  late int number;
+  SummaryProps(this.title, this.icon, this.number);
+}
+
+List<SummaryProps> SummariesData = [
+  SummaryProps("Projects", "assets/summary/verified.png", 100),
+  SummaryProps("Products", "assets/summary/box.png", 40),
+  SummaryProps("Experts", "assets/summary/leader.png", 300),
+  SummaryProps("Countries", "assets/summary/coronavirus.png", 25),
+  SummaryProps("Clients", "assets/summary/client.png", 80),
+  SummaryProps("Years Experienced", "assets/summary/customer-review.png", 11),
+];
