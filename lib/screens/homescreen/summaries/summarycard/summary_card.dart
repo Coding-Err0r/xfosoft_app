@@ -59,8 +59,8 @@ class _SummaryCardState extends State<SummaryCard>
                       BoxShadow(
                           //offset: Offset(0, 4),
                           color: Colors.black38, //edited
-                          spreadRadius: 4,
-                          blurRadius: 5 //edited
+                          spreadRadius: 1,
+                          blurRadius: 2 //edited
                           )
                     ]),
                 child: Center(

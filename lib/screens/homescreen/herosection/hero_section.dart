@@ -16,7 +16,7 @@ class _HeroSectionState extends State<HeroSection> {
   void initState() {
     super.initState();
     _controller =
-        VideoPlayerController.networkUrl(Uri.parse('assets/videos/header.mp4'))
+        VideoPlayerController.asset("assets/videos/header.mp4")
           ..initialize().then((_) {
             // Ensure the first frame is shown after the video is initialized, even before the play button has been pressed.
             _controller.play();

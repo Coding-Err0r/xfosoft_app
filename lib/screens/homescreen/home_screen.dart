@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rive_animation/screens/homescreen/globaloutreach/global_outreach.dart';
 import 'package:rive_animation/screens/homescreen/herosection/hero_section.dart';
 import 'package:rive_animation/screens/homescreen/industries/industries.dart';
 import 'package:rive_animation/screens/homescreen/ourexpertise/our_expertise.dart';
@@ -22,7 +23,8 @@ class _HomeScreenState extends State<HomeScreen> {
           OurServices(),
           OurExpertise(),
           Industries(),
-          Summaries()
+          Summaries(),
+          GlobalOutReach()
         ],
       ),
     );
