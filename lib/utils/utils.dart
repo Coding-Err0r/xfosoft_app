@@ -170,3 +170,52 @@ List<SummaryProps> SummariesData = [
   SummaryProps("Clients", "assets/summary/client.png", 80),
   SummaryProps("Years Experienced", "assets/summary/customer-review.png", 11),
 ];
+
+class CountryProps {
+  late String country;
+  late String countryCode;
+  CountryProps(this.country, this.countryCode);
+}
+
+class MapProps {
+  late String continent;
+  List<CountryProps> countries = [];
+  MapProps(this.continent, this.countries);
+}
+
+List<MapProps> CountriesData = [
+  MapProps("Asia", [
+    CountryProps("Yemen", "YE"),
+    CountryProps("Oman", "OM"),
+    CountryProps("Jordan", "JO"),
+    CountryProps("Maldives", "MV"),
+    CountryProps("Thailand", "TH"),
+    CountryProps("Bangladesh", "BD"),
+    CountryProps("Sri Lanka", "LK"),
+  ]),
+  MapProps("North America", [
+    CountryProps("USA", "US"),
+    CountryProps("Canada", "CA"),
+    CountryProps("Dominican Republic", "DO"),
+  ]),
+  MapProps("South America", [
+    CountryProps("Bolivia", "BO"),
+    CountryProps("Venezuela", "VE"),
+    CountryProps("Peru", "PE"),
+  ]),
+  MapProps("Europe", [
+    CountryProps("Norway", "NO"),
+    CountryProps("Finland", "FI"),
+    CountryProps("Estonia", "EE"),
+    CountryProps("Greece", "GR"),
+    CountryProps("Austria", "AT"),
+    CountryProps("Belgium", "BE"),
+  ]),
+  MapProps("Africa", [
+    CountryProps("Egypt", "EG"),
+    CountryProps("Ethiopia", "ET"),
+    CountryProps("Kenya", "KE"),
+    CountryProps("South Africa", "ZA"),
+    CountryProps("Tanzania", "TZ"),
+  ]),
+];
