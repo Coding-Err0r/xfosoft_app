@@ -8,7 +8,7 @@ class DrawerBtn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 12),
+      padding: const EdgeInsets.symmetric(vertical: 8),
       child: ElevatedButton(
           style: ElevatedButton.styleFrom(
               shadowColor: Colors.cyan,
@@ -21,7 +21,7 @@ class DrawerBtn extends StatelessWidget {
           onPressed: () {},
           child: Row(
             children: [
-               Icon(
+              Icon(
                 icon,
                 color: Colors.black,
                 size: 24,

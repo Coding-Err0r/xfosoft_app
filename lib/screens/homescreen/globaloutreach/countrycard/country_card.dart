@@ -9,8 +9,7 @@ class CountryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 100,
-      height: 100,
+      alignment: Alignment.center,
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(5),
@@ -32,12 +31,16 @@ class CountryCard extends StatelessWidget {
               width: 30,
               borderRadius: 2,
             ),
+            const SizedBox(
+              height: 4,
+            ),
             Text(
               countries.country,
               style: const TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
                   fontSize: 8),
+              textAlign: TextAlign.center,
             )
           ],
         ),

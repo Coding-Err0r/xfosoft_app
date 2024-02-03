@@ -10,7 +10,9 @@ class Countries extends StatelessWidget {
   final List<CountryProps> countries;
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
+      width: MediaQuery.of(context).size.width,
+      alignment: Alignment.center,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
@@ -21,22 +23,20 @@ class Countries extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
-          Center(
-            child: GridView.builder(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 5,
-                  crossAxisSpacing: 12,
-                  mainAxisSpacing: 12,
-                ),
-                itemCount: countries.length,
-                itemBuilder: (_, index) {
-                  return CountryCard(
-                    countries: countries[index],
-                  );
-                }),
-          ),
+          GridView.builder(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 6,
+                crossAxisSpacing: 12,
+                mainAxisSpacing: 12,
+              ),
+              itemCount: countries.length,
+              itemBuilder: (_, index) {
+                return CountryCard(
+                  countries: countries[index],
+                );
+              }),
         ],
       ),
     );
