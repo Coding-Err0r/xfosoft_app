@@ -219,3 +219,42 @@ List<MapProps> CountriesData = [
     CountryProps("Tanzania", "TZ"),
   ]),
 ];
+
+class BrandsProps {
+  late String title;
+  late String icon;
+  BrandsProps(this.title, this.icon);
+}
+
+List<BrandsProps> BrandsData = [
+  BrandsProps("Apple", "assets/brands/apple-logo.png"),
+  BrandsProps("Google", "assets/brands/google.png"),
+  BrandsProps("Apple", "assets/brands/apple-logo.png"),
+  BrandsProps("Google", "assets/brands/google.png"),
+];
+
+class FooterServiceProps {
+  late String title;
+  FooterServiceProps(this.title);
+}
+
+List<FooterServiceProps> FooterServiceData = [
+  FooterServiceProps("Software Development"),
+  FooterServiceProps("Recruiting & Staffing"),
+  FooterServiceProps("Quality Assurance"),
+  FooterServiceProps("AI Based Solutions"),
+  FooterServiceProps("Maintenance & Support"),
+  FooterServiceProps("UI/UX Solutions"),
+];
+
+class FooterLinksProps {
+  late String title;
+  FooterLinksProps(this.title);
+}
+
+List<FooterLinksProps> FooterLinkData = [
+  FooterLinksProps("About Us"),
+  FooterLinksProps("About Us"),
+  FooterLinksProps("Career - We are Hiring"),
+  FooterLinksProps("Privacy Policy"),
+];

@@ -6,6 +6,9 @@ import 'package:rive_animation/screens/homescreen/ourexpertise/our_expertise.dar
 import 'package:rive_animation/screens/homescreen/ourservices/our_services.dart';
 import 'package:rive_animation/screens/homescreen/summaries/summaries.dart';
 
+import 'brands/brands.dart';
+import 'footer/footer.dart';
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -19,12 +22,14 @@ class _HomeScreenState extends State<HomeScreen> {
     return const SingleChildScrollView(
       child: Column(
         children: [
-          HeroSection(),
-          OurServices(),
-          OurExpertise(),
-          Industries(),
-          Summaries(),
-          GlobalOutReach()
+          // HeroSection(),
+          // OurServices(),
+          // OurExpertise(),
+          // Industries(),
+          // Summaries(),
+          // GlobalOutReach(),
+          Brands(),
+          Footer()
         ],
       ),
     );

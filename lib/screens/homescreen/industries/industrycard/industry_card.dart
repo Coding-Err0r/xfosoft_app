@@ -14,10 +14,10 @@ class IndustryCard extends StatefulWidget {
 class _IndustryCardState extends State<IndustryCard>
     with SingleTickerProviderStateMixin {
   late final AnimationController _controller =
-      AnimationController(duration: Duration(milliseconds: 600), vsync: this);
+      AnimationController(duration: const Duration(milliseconds: 600), vsync: this);
 
   late final Animation<Offset> _animation = Tween<Offset>(
-    begin: Offset(0, 1.1),
+    begin: const Offset(0, 1.1),
     end: Offset.zero,
   ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeInOut));
   late bool inView = false;
