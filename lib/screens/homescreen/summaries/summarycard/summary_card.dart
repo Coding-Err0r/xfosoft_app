@@ -69,8 +69,8 @@ class _SummaryCardState extends State<SummaryCard>
                     children: [
                       Image.asset(
                         widget.icon,
-                        width: 50,
-                        height: 50,
+                        width: 40,
+                        height: 40,
                       ),
                       const SizedBox(
                         height: 5,
@@ -84,13 +84,13 @@ class _SummaryCardState extends State<SummaryCard>
                             duration: const Duration(seconds: 3),
                             separator: ',',
                             style: const TextStyle(
-                              fontSize: 18,
+                              fontSize: 16,
                             ),
                           ),
                           const Text(
                             "+",
                             style: TextStyle(
-                              fontSize: 18,
+                              fontSize: 16,
                             ),
                           )
                         ],
@@ -104,6 +104,7 @@ class _SummaryCardState extends State<SummaryCard>
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
                             fontSize: 12),
+                        textAlign: TextAlign.center,
                       )
                     ],
                   ),

@@ -65,7 +65,7 @@ class _GlobalOutReachState extends State<GlobalOutReach> {
               MapBox(),
               SizedBox(
                 width: MediaQuery.of(context).size.width,
-                height: 220,
+                height: 240,
                 child: CarouselSlider(
                     options: CarouselOptions(
                         clipBehavior: Clip.hardEdge,

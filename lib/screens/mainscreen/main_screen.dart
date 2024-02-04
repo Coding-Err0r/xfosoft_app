@@ -36,7 +36,8 @@ class _MainScreenState extends State<MainScreen> {
       drawer: const AppDrawer(),
       body: const Stack(
         children: <Widget>[
-          HomeScreen(),
+          // HomeScreen(),
+          AboutScreen()
           // AppDrawer(),
         ],
       ),

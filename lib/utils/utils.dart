@@ -258,3 +258,19 @@ List<FooterLinksProps> FooterLinkData = [
   FooterLinksProps("Career - We are Hiring"),
   FooterLinksProps("Privacy Policy"),
 ];
+
+class AboutSummaryProps {
+  late String title;
+  late String icon;
+  late String description;
+  AboutSummaryProps(this.title, this.icon, this.description);
+}
+
+List<AboutSummaryProps> AboutSummaryData = [
+  AboutSummaryProps("Our Mission", "assets/images/target.gif",
+      "Our mission is to catalyze your success. We specialize in dynamic software and web development, alongside strategic recruitment and staffing solutions, all meticulously tailored to empower your growth. Your success is at the heart of our mission, and we are committed to being your dedicated partner on the path to excellence."),
+  AboutSummaryProps("Our Core Values", "assets/images/social-care.gif",
+      "Our core values are the pillars of our identity. We ardently pursue excellence, infuse innovation & creativity into every endeavor, and uphold unwavering integrity. Collaboration is our strength, and our client-centric approach fuels exceptional results. With a commitment to continuous learning, community engagement, agility, and a passion for excellence, we define success together."),
+  AboutSummaryProps("Our Vision", "assets/images/eye.gif",
+      "Our vision at Xfosoft is to be a global leader at the intersection of technology and talent. We aim to revolutionize industries through innovative software and web development solutions while shaping careers and fostering a vibrant, inclusive, and dynamic community of professionals. Our vision is to continually push boundaries, exceed expectations, and be the driving force behind transformative change in the tech and staffing landscape."),
+];

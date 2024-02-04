@@ -22,12 +22,12 @@ class _HomeScreenState extends State<HomeScreen> {
     return const SingleChildScrollView(
       child: Column(
         children: [
-          // HeroSection(),
-          // OurServices(),
-          // OurExpertise(),
-          // Industries(),
-          // Summaries(),
-          // GlobalOutReach(),
+          HeroSection(),
+          OurServices(),
+          OurExpertise(),
+          Industries(),
+          Summaries(),
+          GlobalOutReach(),
           Brands(),
           Footer()
         ],

@@ -9,76 +9,181 @@ class Footer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color.fromARGB(255, 204, 204, 204),
+      color: Color.fromARGB(255, 224, 224, 224),
       padding: const EdgeInsets.all(16),
       width: MediaQuery.of(context).size.width,
       child: Column(
         children: [
-          const Row(
+          Row(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [FooterService(), FooterSupport()],
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Flexible(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const FooterService(),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 10),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const SizedBox(
+                            height: 12,
+                          ),
+                          RichText(
+                              text: const TextSpan(
+                            // note: styles for textspans must be explicitly defined.
+                            // child text spans will inherit styles from parent
+                            style: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500,
+                            ),
+                            children: [
+                              TextSpan(
+                                  text: 'Address : ',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black)),
+                              TextSpan(
+                                  text:
+                                      '26 Broadway, Suite 934, New York, New York 10004, United States',
+                                  style: TextStyle(color: Colors.black)),
+                            ],
+                          )),
+                          const SizedBox(
+                            height: 12,
+                          ),
+                          RichText(
+                              text: const TextSpan(
+                            // note: styles for textspans must be explicitly defined.
+                            // child text spans will inherit styles from parent
+                            style: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500,
+                            ),
+                            children: [
+                              TextSpan(
+                                  text: 'Contact : ',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black)),
+                              TextSpan(
+                                  text: '(212) 884-8837',
+                                  style: TextStyle(color: Colors.black)),
+                            ],
+                          )),
+                          const SizedBox(
+                            height: 12,
+                          ),
+                          RichText(
+                              text: const TextSpan(
+                            // note: styles for textspans must be explicitly defined.
+                            // child text spans will inherit styles from parent
+                            style: TextStyle(
+                                fontSize: 14,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.black),
+                            children: [
+                              TextSpan(
+                                  text: 'Email : ',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.black)),
+                              TextSpan(
+                                  text: 'connect@Xfosoft.com',
+                                  style: TextStyle(color: Colors.black)),
+                            ],
+                          )),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  FooterSupport(),
+                  SizedBox(
+                    height: 12,
+                  ),
+                  FooterLinks()
+                ],
+              ),
+            ],
           ),
-          const Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [FooterLinks()],
+          const SizedBox(
+            height: 16,
           ),
-          Column(
+          Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              RichText(
-                  text: const TextSpan(
-                // note: styles for textspans must be explicitly defined.
-                // child text spans will inherit styles from parent
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w500,
+              ElevatedButton(
+                onPressed: () {},
+                child: const Icon(Icons.facebook, color: Colors.white),
+                style: ElevatedButton.styleFrom(
+                  shape: const CircleBorder(),
+                  padding: const EdgeInsets.all(15),
+                  backgroundColor:
+                      const Color.fromARGB(255, 36, 37, 58), // <-- Button color
+                  foregroundColor: Colors.cyan, // <-- Splash color
                 ),
-                children: [
-                  TextSpan(
-                      text: 'Address : ',
-                      style: TextStyle(fontWeight: FontWeight.bold)),
-                  TextSpan(
-                      text:
-                          '26 Broadway, Suite 934, New York, New York 10004, United States'),
-                ],
-              )),
-              const SizedBox(
-                height: 8,
               ),
-              RichText(
-                  text: const TextSpan(
-                // note: styles for textspans must be explicitly defined.
-                // child text spans will inherit styles from parent
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w500,
+              ElevatedButton(
+                onPressed: () {},
+                child: const Text(
+                  "X",
+                  style: TextStyle(color: Colors.white),
                 ),
-                children: [
-                  TextSpan(
-                      text: 'Contact : ',
-                      style: TextStyle(fontWeight: FontWeight.bold)),
-                  TextSpan(text: '(212) 884-8837'),
-                ],
-              )),
-              const SizedBox(
-                height: 8,
+                style: ElevatedButton.styleFrom(
+                  shape: const CircleBorder(),
+                  padding: const EdgeInsets.all(16),
+                  backgroundColor:
+                      const Color.fromARGB(255, 36, 37, 58), // <-- Button color
+                  foregroundColor: Colors.blue, // <-- Splash color
+                ),
               ),
-              RichText(
-                  text: const TextSpan(
-                // note: styles for textspans must be explicitly defined.
-                // child text spans will inherit styles from parent
-                style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w500,
+              ElevatedButton(
+                onPressed: () {},
+                child: const Text(
+                  "in",
+                  style: TextStyle(color: Colors.white),
                 ),
-                children: [
-                  TextSpan(
-                      text: 'Email : ',
-                      style: TextStyle(fontWeight: FontWeight.bold)),
-                  TextSpan(text: 'connect@Xfosoft.com'),
-                ],
-              )),
+                style: ElevatedButton.styleFrom(
+                  shape: const CircleBorder(),
+                  padding: const EdgeInsets.all(16),
+                  backgroundColor:
+                      const Color.fromARGB(255, 36, 37, 58), // <-- Button color
+                  foregroundColor: Colors.cyanAccent, // <-- Splash color
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {},
+                child: const Icon(Icons.play_arrow, color: Colors.white),
+                style: ElevatedButton.styleFrom(
+                  shape: const CircleBorder(),
+                  padding: const EdgeInsets.all(15),
+                  backgroundColor:
+                      const Color.fromARGB(255, 36, 37, 58), // <-- Button color
+                  foregroundColor: Colors.red, // <-- Splash color
+                ),
+              ),
             ],
+          ),
+          const SizedBox(
+            height: 16,
+          ),
+          const Divider(
+            color: Colors.white,
+          ),
+          const Text(
+            "Copyright ©️ 2023 Xfosoft IT Solutions - All Rights Reserved",
+            style: TextStyle(
+              fontSize: 14,
+              fontWeight: FontWeight.w500,
+            ),
+            textAlign: TextAlign.center,
           )
         ],
       ),
