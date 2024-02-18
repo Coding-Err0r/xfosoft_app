@@ -12,27 +12,23 @@ class RollingText extends StatelessWidget {
         alignment: Alignment.bottomCenter,
         child: Column(
           children: [
-            Row(
-              children: [
-                DefaultTextStyle(
-                  style: const TextStyle(
-                      fontSize: 20.0,
-                      fontFamily: 'Horizon',
-                      fontWeight: FontWeight.bold,
-                      color: Color.fromARGB(255, 0, 250, 133)),
-                  child: AnimatedTextKit(
-                    animatedTexts: [
-                      RotateAnimatedText('SIMPLE'),
-                      RotateAnimatedText('SMART'),
-                      RotateAnimatedText('SCALABLE'),
-                    ],
-                    onTap: () {
-                      print("Tap Event");
-                    },
-                  ),
-                ),
-              ],
-            )
+            DefaultTextStyle(
+              style: const TextStyle(
+                  fontSize: 20.0,
+                  fontFamily: 'Horizon',
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 0, 250, 133)),
+              child: AnimatedTextKit(
+                animatedTexts: [
+                  RotateAnimatedText('SIMPLE'),
+                  RotateAnimatedText('SMART'),
+                  RotateAnimatedText('SCALABLE'),
+                ],
+                onTap: () {
+                  print("Tap Event");
+                },
+              ),
+            ),
           ],
         ),
       ),

@@ -15,14 +15,13 @@ class _HeroSectionState extends State<HeroSection> {
   @override
   void initState() {
     super.initState();
-    _controller =
-        VideoPlayerController.asset("assets/videos/header.mp4")
-          ..initialize().then((_) {
-            // Ensure the first frame is shown after the video is initialized, even before the play button has been pressed.
-            _controller.play();
-            _controller.setLooping(true);
-            setState(() {});
-          });
+    _controller = VideoPlayerController.asset("assets/videos/header.mp4")
+      ..initialize().then((_) {
+        // Ensure the first frame is shown after the video is initialized, even before the play button has been pressed.
+        _controller.play();
+        _controller.setLooping(true);
+        setState(() {});
+      });
   }
 
   @override

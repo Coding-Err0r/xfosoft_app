@@ -274,3 +274,60 @@ List<AboutSummaryProps> AboutSummaryData = [
   AboutSummaryProps("Our Vision", "assets/images/eye.gif",
       "Our vision at Xfosoft is to be a global leader at the intersection of technology and talent. We aim to revolutionize industries through innovative software and web development solutions while shaping careers and fostering a vibrant, inclusive, and dynamic community of professionals. Our vision is to continually push boundaries, exceed expectations, and be the driving force behind transformative change in the tech and staffing landscape."),
 ];
+
+class WhatWeDeliverProps {
+  late String gif;
+  late String title;
+  late String description;
+  late bool side;
+  WhatWeDeliverProps(this.gif, this.title, this.description, this.side);
+}
+
+List<WhatWeDeliverProps> WhatWeDeliverData = [
+  WhatWeDeliverProps(
+      "assets/images/whatwedeliver (1).gif",
+      "Customer-Centricity",
+      "We prioritize the needs of our clients. Our core focus is to deliver personalized solutions that meet your unique requirements and add value to your business. Whether you are a start-up, SME, or an MNC -we will design, craft, & deliver IT Solutions to enable you to disrupt the status quo and emerge as a market leader.",
+      false),
+  WhatWeDeliverProps(
+      "assets/images/whatwedeliver (2).gif",
+      "Agility",
+      "We demolish the barriers between design, development, and deployment to strengthen feedback, security, and scalability. Our dynamic team never tires because of our agile model. Scrum framework ensures that our development cycle maintains a consistent pace without roadblocks. Whether you want end-to-end service or a product infrastructure, we will complete your project in time with measurable deliverables along the way.",
+      true),
+  WhatWeDeliverProps(
+      "assets/images/whatwedeliver (3).gif",
+      "Co-Creation",
+      "We collaborate with your team to deliver end-to-end design, engineering, and development services. We work with your team to remove any bureaucratic red tape and enable swift, seamless software delivery cycles. Whether you're a team of 5 or 50, we will work with you hand-in-hand to deliver tangible results.",
+      false),
+];
+
+class VisionariesProps {
+  late String image;
+  late String name;
+  late String designation;
+  late String description;
+  late bool side;
+  VisionariesProps(
+      this.image, this.name, this.designation, this.description, this.side);
+}
+
+List<VisionariesProps> VisionariesData = [
+  VisionariesProps(
+      "assets/visionary/user (3).jpeg",
+      "Tareq Ahmed",
+      "Chief Product & Technology Officer",
+      "At XFOSOFT, we lead the charge in fostering innovation across software development, recruitment, and consultancy. Our utmost dedication to excellence serves as the driving force behind technological advancement and our ability to seamlessly connect you with top-tier talent. We stand as your trusted partner in the ever-evolving tech and staffing landscape, wholeheartedly committed to propelling your success to greater heights. With a proven track record of innovation and a relentless pursuit of creative bounds, we are here to guide you on your journey towards progress.",
+      false),
+  VisionariesProps(
+      "assets/visionary/user (2).jpeg",
+      "Tarique Hassan",
+      "Chief Operating Officer",
+      "As the Chief Operating Officer, I am your trusted collaborator in achieving success. With a powerful fusion of software prowess, talent solutions, and expert consultancy, we pave the way for your company's boundless growth and prosperity. Our mission is to understand your unique needs, envision innovative solutions, and create value that sets you on top of the map. Together, let’s embark on a journey to unlock your company's full potential and reach new heights of achievement.",
+      true),
+  VisionariesProps(
+      "assets/visionary/user (1).jpeg",
+      "Mohammad Ullah",
+      "Chief Revenue & Financial Officer",
+      "As Chief Revenue and Financial Officer, my goal is to not just meet but exceed your financial objectives. We've harnessed the power of software excellence, strategic talent acquisition, and expert consultancy to consistently propel us toward remarkable milestones. This is a testament to our commitment to your success and our proven track record in delivering tangible financial results that work best for your business.",
+      false),
+];

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:rive_animation/screens/aboutscreen/about_screen.dart';
+import 'package:rive_animation/screens/screens.dart';
 
 class DrawerBtn extends StatelessWidget {
   const DrawerBtn({super.key, required this.title, required this.icon});
@@ -18,7 +20,18 @@ class DrawerBtn extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(0),
               )),
-          onPressed: () {},
+          onPressed: () {
+            if (title.toLowerCase() == "about us") {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const AboutScreen()),
+              );
+            }
+            if (title.toLowerCase() == "home") {
+              Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(builder: (context) => const HomeScreen()));
+            }
+          },
           child: Row(
             children: [
               Icon(
