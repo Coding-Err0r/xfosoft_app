@@ -50,6 +50,7 @@ dependencies:
   country_flags: ^2.2.0
   smooth_page_indicator: ^1.1.0
   readmore: ^2.2.0
+  stacked_card_carousel: ^0.0.4
 
 dev_dependencies:
   flutter_test:
@@ -87,6 +88,7 @@ flutter:
     - assets/brands/
     - assets/about/
     - assets/visionary/
+    - assets/service/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

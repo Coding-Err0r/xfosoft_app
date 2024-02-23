@@ -331,3 +331,55 @@ List<VisionariesProps> VisionariesData = [
       "As Chief Revenue and Financial Officer, my goal is to not just meet but exceed your financial objectives. We've harnessed the power of software excellence, strategic talent acquisition, and expert consultancy to consistently propel us toward remarkable milestones. This is a testament to our commitment to your success and our proven track record in delivering tangible financial results that work best for your business.",
       false),
 ];
+
+class WCUProps {
+  late String title;
+  late String background;
+  late String description;
+  late bool side;
+  WCUProps(this.title, this.background, this.description, this.side);
+}
+
+List<WCUProps> WCUData = [
+  WCUProps(
+      "Innovation",
+      "assets/images/services (1).gif",
+      "We believe in pushing the boundaries of what is possible. We always look into dynamic technologies and explore new frontiers in the field.",
+      false),
+  WCUProps(
+      "Collaboration",
+      "assets/images/services (2).gif",
+      "We foster collaboration in everything we do. Our team's combined effort brings out the absolute best result-driven solution to any given problem.",
+      true),
+  WCUProps(
+      "Dedication",
+      "assets/images/services (3).gif",
+      "We strive for excellence and integrity in all aspects of our work. We use every resource at our disposal to ensure results that elevate businesses to newer heights.",
+      false),
+];
+
+class WWDProps {
+  late String title;
+  late String background;
+  late String description;
+
+  WWDProps(this.title, this.background, this.description);
+}
+
+List<WWDProps> WWDData = [
+  WWDProps(
+    "Strategy",
+    "assets/images/whatWeDo (1).jpg",
+    "We strive for excellence in everything we do. We ascertain the core problem that our clients are facing when running their business processes and develop cost-effective strategies to find the best possible outcome that will fit their specific needs.",
+  ),
+  WWDProps(
+    "Solution",
+    "assets/images/whatWeDo (1).png",
+    "With a well-crafted strategy at hand, we assess the business requirements of our clients and lay a solid foundation. We define optimum quality by meticulously using dynamic technologies and flexible resources to build sustainable solutions.",
+  ),
+  WWDProps(
+    "Service",
+    "assets/images/whatWeDo (2).jpg",
+    "Once the groundwork is done and the solution is market-ready, we move for deployment while ensuring product security, scalability, and adaptability. We continuously scale, optimize, and augment solutions through our maintenance & support service.",
+  ),
+];
