@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const ServiceScreen(),
+        home: const HomeScreen(),
         scrollBehavior:
             const MaterialScrollBehavior().copyWith(scrollbars: false));
   }

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../appdrawer/app_drawer.dart';
 import 'serviceheader/service_header.dart';
+import 'services/services.dart';
 import 'wcusection/why_choose_us_section.dart';
 import 'wwdsection/what_we_deliver_section.dart';
 
@@ -39,7 +40,8 @@ class ServiceScreen extends StatelessWidget {
             children: [
               ServiceHeader(),
               WhyChooseUsSection(),
-              WhatWeDeliverSection()
+              WhatWeDeliverSection(),
+              Services()
             ],
           ),
         ));

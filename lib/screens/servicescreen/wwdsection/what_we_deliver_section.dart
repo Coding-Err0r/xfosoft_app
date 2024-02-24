@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_swiper_view/flutter_swiper_view.dart';
 import 'package:rive_animation/utils/utils.dart';
-import 'package:stacked_card_carousel/stacked_card_carousel.dart';
 
 import 'wwdcard/what_we_deliver_card.dart';
 
@@ -26,10 +26,23 @@ class WhatWeDeliverSection extends StatelessWidget {
         description: WWDData[2].description,
       ),
     ];
-    return StackedCardCarousel(
-      type: StackedCardCarouselType.cardsStack,
-      initialOffset: 200,
-      items: stackCards,
+    return Swiper(
+      itemWidth: MediaQuery.of(context).size.width * 0.9,
+      itemHeight: 400,
+      loop: true,
+      duration: 400,
+      scrollDirection: Axis.horizontal,
+      itemBuilder: (context, index) {
+        return WWDCard(
+          title: WWDData[index].title,
+          background: WWDData[index].background,
+          description: WWDData[index].description,
+        );
+      },
+      itemCount: 3,
+      layout: SwiperLayout.TINDER,
+      allowImplicitScrolling: false,
+      curve: Curves.bounceInOut,
     );
   }
 }

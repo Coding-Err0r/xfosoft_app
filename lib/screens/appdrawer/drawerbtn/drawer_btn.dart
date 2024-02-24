@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:rive_animation/screens/aboutscreen/about_screen.dart';
 import 'package:rive_animation/screens/screens.dart';
 
+import '../../servicescreen/service_screen.dart';
+
 class DrawerBtn extends StatelessWidget {
   const DrawerBtn({super.key, required this.title, required this.icon});
   final String title;
@@ -30,6 +32,10 @@ class DrawerBtn extends StatelessWidget {
             if (title.toLowerCase() == "home") {
               Navigator.of(context).pushReplacement(
                   MaterialPageRoute(builder: (context) => const HomeScreen()));
+            }
+            if (title.toLowerCase() == "services") {
+              Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  builder: (context) => const ServiceScreen()));
             }
           },
           child: Row(

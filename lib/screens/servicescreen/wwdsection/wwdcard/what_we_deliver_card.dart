@@ -34,7 +34,7 @@ class _WWDCardState extends State<WWDCard> {
           }
         },
         child: Container(
-            width: MediaQuery.of(context).size.width * 0.8,
+            width: MediaQuery.of(context).size.width * 0.9,
             height: 400,
             child: Stack(
               children: [
@@ -43,20 +43,20 @@ class _WWDCardState extends State<WWDCard> {
                   child: AnimatedContainer(
                       duration: const Duration(milliseconds: 3000),
                       curve: Curves.easeOutCubic,
-                      width: MediaQuery.of(context).size.width * 0.8,
+                      width: MediaQuery.of(context).size.width * 0.9,
                       height: 400,
                       transform: Matrix4.identity()..scale(visible ? 1.2 : 1),
                       child: Image.asset(
                         widget.background,
                         height: 400,
-                        width: MediaQuery.of(context).size.width * 0.8,
+                        width: MediaQuery.of(context).size.width * 0.9,
                         fit: BoxFit.cover,
                       )),
                 ),
                 ClipRRect(
                   borderRadius: BorderRadius.circular(12.0),
                   child: Container(
-                    width: MediaQuery.of(context).size.width * 0.8,
+                    width: MediaQuery.of(context).size.width * 0.9,
                     height: 400,
                     decoration: const BoxDecoration(
                         gradient: LinearGradient(
@@ -78,7 +78,7 @@ class _WWDCardState extends State<WWDCard> {
                             fontSize: 30),
                       ),
                       const SizedBox(
-                        height: 24,
+                        height: 40,
                       ),
                       Text(
                         widget.description,
