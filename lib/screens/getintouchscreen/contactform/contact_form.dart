@@ -75,6 +75,7 @@ class _ContactFormState extends State<ContactForm> {
     return Container(
       width: MediaQuery.of(context).size.width * 0.9,
       decoration: BoxDecoration(
+          color: Colors.white,
           borderRadius: const BorderRadius.all(Radius.circular(20)),
           boxShadow: [
             BoxShadow(

@@ -35,14 +35,17 @@ class ServiceScreen extends StatelessWidget {
           iconTheme: const IconThemeData(color: Colors.grey),
         ),
         drawer: const AppDrawer(),
-        body: const SingleChildScrollView(
-          child: Column(
-            children: [
-              ServiceHeader(),
-              WhyChooseUsSection(),
-              WhatWeDeliverSection(),
-              Services()
-            ],
+        body: Container(
+          color: Colors.white,
+          child: const SingleChildScrollView(
+            child: Column(
+              children: [
+                ServiceHeader(),
+                WhyChooseUsSection(),
+                WhatWeDeliverSection(),
+                Services()
+              ],
+            ),
           ),
         ));
   }

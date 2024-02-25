@@ -6,7 +6,6 @@ import '../appdrawer/app_drawer.dart';
 import 'contactform/contact_form.dart';
 import 'contactusheader/contact_us_header.dart';
 import 'infosection/info_section.dart';
-import 'mapsection/map_section.dart';
 
 class GetInTouchScreen extends StatelessWidget {
   const GetInTouchScreen({super.key});
@@ -35,19 +34,22 @@ class GetInTouchScreen extends StatelessWidget {
           iconTheme: const IconThemeData(color: Colors.grey),
         ),
         drawer: const AppDrawer(),
-        body: const SingleChildScrollView(
-          child: Column(
-            children: [
-              ContactUsHeader(),
-              InfoSection(),
-              SizedBox(
-                height: 20,
-              ),
-              ContactForm(),
-              SizedBox(
-                height: 50,
-              ),
-            ],
+        body: Container(
+          color: Colors.white,
+          child: const SingleChildScrollView(
+            child: Column(
+              children: [
+                ContactUsHeader(),
+                InfoSection(),
+                SizedBox(
+                  height: 20,
+                ),
+                ContactForm(),
+                SizedBox(
+                  height: 50,
+                ),
+              ],
+            ),
           ),
         ));
   }

@@ -15,7 +15,7 @@ class TypeText extends StatelessWidget {
             DefaultTextStyle(
               style: const TextStyle(
                   fontFamily: 'Horizon',
-                  fontSize: 35,
+                  fontSize: 28,
                   fontWeight: FontWeight.bold,
                   color: Colors.white),
               child: AnimatedTextKit(

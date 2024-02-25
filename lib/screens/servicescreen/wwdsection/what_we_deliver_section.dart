@@ -26,23 +26,24 @@ class WhatWeDeliverSection extends StatelessWidget {
         description: WWDData[2].description,
       ),
     ];
-    return Swiper(
-      itemWidth: MediaQuery.of(context).size.width * 0.9,
-      itemHeight: 400,
-      loop: true,
-      duration: 400,
-      scrollDirection: Axis.horizontal,
-      itemBuilder: (context, index) {
-        return WWDCard(
-          title: WWDData[index].title,
-          background: WWDData[index].background,
-          description: WWDData[index].description,
-        );
-      },
-      itemCount: 3,
-      layout: SwiperLayout.TINDER,
-      allowImplicitScrolling: false,
-      curve: Curves.bounceInOut,
+    return Container(
+      child: Swiper(
+        itemWidth: MediaQuery.of(context).size.width * 0.9,
+        itemHeight: 400,
+        loop: true,
+        duration: 400,
+        scrollDirection: Axis.horizontal,
+        itemBuilder: (context, index) {
+          return WWDCard(
+            title: WWDData[index].title,
+            background: WWDData[index].background,
+            description: WWDData[index].description,
+          );
+        },
+        itemCount: 3,
+        layout: SwiperLayout.TINDER,
+        curve: Curves.bounceInOut,
+      ),
     );
   }
 }
