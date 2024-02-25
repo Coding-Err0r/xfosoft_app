@@ -53,6 +53,8 @@ dependencies:
   stacked_card_carousel: ^0.0.4
   flutter_swiper_view: ^1.1.8
   dotted_border: ^2.1.0
+  country_code_picker: ^3.0.0
+  awesome_select: ^6.0.0
 
 dev_dependencies:
   flutter_test:

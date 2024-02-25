@@ -78,7 +78,7 @@ List<DrawerButtonProps> DrawerButtonData = [
   DrawerButtonProps("Home", Icons.home),
   DrawerButtonProps("About Us", Icons.person),
   DrawerButtonProps("Services", Icons.miscellaneous_services_rounded),
-  DrawerButtonProps("Career", Icons.join_full),
+  DrawerButtonProps("Contact Us", Icons.connect_without_contact),
 ];
 
 List<Map<String, dynamic>> IndustriesData = [

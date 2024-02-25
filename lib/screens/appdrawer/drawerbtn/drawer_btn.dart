@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:rive_animation/screens/aboutscreen/about_screen.dart';
 import 'package:rive_animation/screens/screens.dart';
 
+import '../../getintouchscreen/get_in_touch_screen.dart';
 import '../../servicescreen/service_screen.dart';
 
 class DrawerBtn extends StatelessWidget {
@@ -36,6 +37,10 @@ class DrawerBtn extends StatelessWidget {
             if (title.toLowerCase() == "services") {
               Navigator.of(context).pushReplacement(MaterialPageRoute(
                   builder: (context) => const ServiceScreen()));
+            }
+            if (title.toLowerCase() == "contact us") {
+              Navigator.of(context).pushReplacement(MaterialPageRoute(
+                  builder: (context) => const GetInTouchScreen()));
             }
           },
           child: Row(
