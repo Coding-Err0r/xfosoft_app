@@ -55,6 +55,7 @@ dependencies:
   dotted_border: ^2.1.0
   country_code_picker: ^3.0.0
   awesome_select: ^6.0.0
+  swipeable_card_stack: ^0.0.5
 
 dev_dependencies:
   flutter_test:
